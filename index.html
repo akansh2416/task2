@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fccafec204.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>To-Do List App<img src="icon.png"></h2>
+    <div class="wrapper">
+        <div class="task-input">
+            <i class="fa-solid fa-bars"></i>
+            <input type="text" placeholder="Add a new task here">
+            <select id="prioritySelect">
+                <option value="high">High Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="low">Low Priority</option>
+            </select>
+            <input type="date" id="deadlineInput">
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
